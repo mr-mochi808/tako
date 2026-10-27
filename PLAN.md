@@ -7,14 +7,19 @@ Living design doc. Every mechanic and idea lives here. Items marked
 - Pitch: You start as an octopus and evolve. You pick adaptations that
   shape your build, and you have to eat to survive. **SETTLED**
 - Player fantasy: you play the octopus and grow it into something new. **SETTLED**
-- "Everything is kind of crab": the world leans toward crabs
-  (carcinization?). Meaning still **OPEN** (see Q6)
+- Style reference: **Everything is Crab** (animal-evolution roguelite,
+  released 2026). It's a joke about carcinization: every creature
+  eventually evolves into a crab. Tako should feel like that game. **SETTLED**
+  - In that game you hunt creatures, eat them for XP, and pick 1 of 3
+    mutations each level-up. Some mutations rule out others (antlers vs.
+    horns). Attacks are manual, based on timing and dodging. Runs last about
+    20 minutes with bosses.
 - Platform: web game first. **SETTLED**
 - Feel: chaotic, clever and relaxed at the same time. **SETTLED**
 - Scope: solo hobby project, no deadline. **SETTLED**
-- Genre: top-down 2D roguelite survivor, like Vampire Survivors / Brotato.
-  Each run is one life. **SETTLED**
-- Session length: **OPEN**
+- Genre: top-down 2D evolution roguelite. Each run is one life. **SETTLED**
+- Run length: endless, no set end. **SETTLED**
+- Controls: keyboard only for now. Keyboard + mouse and touch later. **SETTLED**
 
 ## 2. Core loop
 - Moment-to-moment (seconds): **OPEN**
@@ -35,8 +40,8 @@ _One subsection per mechanic. Template:_
 
 ### 3.1 Adaptations (build)
 - **What it is:** Kills earn progress. At each threshold you choose 1 of
-  several random adaptations (VS/Brotato style). On top of that, you partly
-  become what you eat.
+  several random adaptations. On top of that, you partly become what you
+  eat (see 3.7).
 - **Why:** this is where builds get chaotic and clever.
 - **Rules & numbers:** number of choices per pick, rerolls, whether
   adaptations stack/upgrade, how eating changes you: **OPEN**
@@ -52,11 +57,26 @@ _One subsection per mechanic. Template:_
 ### 3.3 Death & runs
 - **What it is:** when you die, the run restarts from scratch. Nothing
   carries over (no meta-progression). **SETTLED**
-- **What kills you:** enemies (hunger can't). The health system is **OPEN**
+- **What kills you:** enemies (hunger can't).
+
+### 3.4 Health
+- A health bar that eating refills. **SETTLED**
+
+### 3.5 Food sources
+- Killed animals (eat what's left after the kill) and fruit from trees. **SETTLED**
+- How much each heals or fills hunger: **OPEN**
+
+### 3.6 Combat / abilities
+- Abilities fire when you press a button (not automatic). **SETTLED**
+- Keys, number of slots, aiming with keyboard only: **OPEN**
+
+### 3.7 Become what you eat
+- Eating a creature type makes its adaptations show up more often in your
+  picks. **SETTLED**
 
 ## 4. Ideas backlog
 _Unsorted ideas not yet promoted to mechanics._
-- Crab world: everything tends toward crab. Meaning still being clarified.
+- Crab pull (carcinization) as a real mechanic: **OPEN**
 
 ## 5. Win / lose / scoring
 - **OPEN**
@@ -82,3 +102,10 @@ _Unsorted ideas not yet promoted to mechanics._
 | 6 | Adaptation source | Kills earn picks (choose from random options), plus partly becoming what you eat | 2026-10-27 |
 | 7 | Hunger | Empty meter means slower and weaker; no shrinking, no death | 2026-10-27 |
 | 8 | Death | Full restart, no meta-progression | 2026-10-27 |
+| 9 | Style reference | Everything is Crab | 2026-10-27 |
+| 10 | Attacks | Press-a-button abilities | 2026-10-27 |
+| 11 | Food | Animal kills and tree fruit | 2026-10-27 |
+| 12 | Run length | Endless | 2026-10-27 |
+| 13 | Health | Health bar, healed by eating | 2026-10-27 |
+| 14 | Become what you eat | Eating a creature biases your picks toward its adaptations | 2026-10-27 |
+| 15 | Controls | Keyboard only for now | 2026-10-27 |
