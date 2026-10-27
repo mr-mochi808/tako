@@ -43,6 +43,8 @@ _One subsection per mechanic. Template:_
   refills health and hunger). Each level-up you choose 1 of several random
   adaptations. On top of that, you partly become what you eat (see 3.7). **SETTLED**
 - **Why:** this is where builds get chaotic and clever.
+- **Body slots:** mutations go into body slots, and stacking is also
+  allowed. What "stack" means exactly: **OPEN**
 - **Rules & numbers:** number of choices per pick, rerolls, whether
   adaptations stack/upgrade, how eating changes you: **OPEN**
 - **Status:** core SETTLED, details OPEN
@@ -51,7 +53,8 @@ _One subsection per mechanic. Template:_
 - **What it is:** a food meter that drains over time.
 - **Rules:** hunger can't kill you. When the meter is empty you move slower
   and your attacks deal less damage. You don't shrink. **SETTLED**
-- **Where food comes from / drain rate:** **OPEN**
+- **Drain rate:** slow and relaxed. An empty meter only makes you slower
+  and weaker. **SETTLED**
 - **Status:** core SETTLED, details OPEN
 
 ### 3.3 Death & runs
@@ -71,6 +74,7 @@ _One subsection per mechanic. Template:_
 - Keys: WASD to move. J / K / L / Space are 4 ability slots. Abilities fire
   the way you're facing. **SETTLED**
 - Mutations that give an attack fill these slots. Mouse aiming comes later. **SETTLED**
+- Starting kit: tentacle slap only. No ink cloud. **SETTLED**
 
 ### 3.7 Become what you eat
 - Eating a creature type makes its adaptations show up more often in your
@@ -78,17 +82,21 @@ _One subsection per mechanic. Template:_
 
 ## 4. Ideas backlog
 _Unsorted ideas not yet promoted to mechanics._
-- Crab pull (carcinization) as a real mechanic: **OPEN**
+- Crab pull: the longer you survive, the more crab parts show up in your
+  picks. **SETTLED** (Does anything happen when you go full crab? **OPEN**)
 
 ## 5. Win / lose / scoring
 - No score. The fun is seeing what you turn into. A run ends when you die. **SETTLED**
+- When you die: a creature card showing your parts and how long you
+  survived. **SETTLED**
+- Difficulty: rises over time, with bosses now and then. **SETTLED**
 
 ## 6. Progression & economy
 - **OPEN**
 
 ## 7. World, setting & tone
 - Tone: silly, not super realistic. **SETTLED**
-- Setting (water / land / shore): **OPEN**
+- Setting: beach, ocean and land. You can crawl out of the water. **SETTLED**
 
 ## 8. Scope & tech
 - Engine / language: **OPEN**
@@ -116,3 +124,10 @@ _Unsorted ideas not yet promoted to mechanics._
 | 17 | Ability keys | WASD to move, J/K/L/Space for abilities, aimed where you're facing | 2026-10-27 |
 | 18 | Scoring | No score | 2026-10-27 |
 | 19 | Tone | Silly, not realistic | 2026-10-27 |
+| 20 | Body slots | Slots, and stacking is also allowed | 2026-10-27 |
+| 21 | Difficulty | Rises over time, plus bosses | 2026-10-27 |
+| 22 | Crab pull | Crab parts show up more the longer you survive | 2026-10-27 |
+| 23 | Starting kit | Tentacle slap only | 2026-10-27 |
+| 24 | Setting | Beach, ocean, land | 2026-10-27 |
+| 25 | Death screen | Creature card | 2026-10-27 |
+| 26 | Hunger drain | Slow | 2026-10-27 |
