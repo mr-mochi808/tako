@@ -1,7 +1,7 @@
 # Tako — Design Plan
 
 Living design doc for Tako. Every mechanic and idea lives here, and a
-coding session builds from it. Items marked **OPEN** are gaps still being
+coding session builds from it. Items marked **OPEN** would be gaps still being
 decided. Everything else has been settled with the designer. The decision
 log at the bottom records each answer.
 
@@ -73,10 +73,10 @@ log at the bottom records each answer.
 - Abilities fire when you press their key (no auto-attacks), in the
   direction you're facing.
 - Starting kit: **tentacle slap (J)** only.
-- Default keys: J = tentacle attacks, K = mouth attacks, L = claw attacks,
-  Space = special (charge, etc.).
-- When two attacks share a key (for example, Big Mouth + Duck Bill on K):
-  **OPEN** (see the questions below)
+- Keys go by attack type, not body slot: J = tentacle attacks, K = mouth
+  attacks, L = claw attacks, Space = special (charge, etc.).
+- When two attacks share a key (for example, Big Mouth + Duck Bill on K),
+  pressing it fires **both at once**. You never lose an attack you picked.
 
 ### 3.4 Health & hunger
 - **Health bar**, refilled by eating. Enemies are the only thing that can
@@ -205,3 +205,5 @@ _New ideas go here before they become mechanics._
 | 37 | Saving | Device first; Supabase cloud saves in version 2 |
 | 38 | Login | Play without logging in; Google sign-in later |
 | 39 | First-version saving | Run history saved on the device |
+| 40 | Shared keys | Keys go by attack type; attacks on the same key fire together |
+| 41 | Duck in first version | Yes, with Duck Bill |
