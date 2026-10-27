@@ -39,9 +39,9 @@ _One subsection per mechanic. Template:_
 - **Status:** OPEN
 
 ### 3.1 Adaptations (build)
-- **What it is:** Kills earn progress. At each threshold you choose 1 of
-  several random adaptations. On top of that, you partly become what you
-  eat (see 3.7).
+- **What it is:** Eating what you kill gives XP. Fruit gives none (it only
+  refills health and hunger). Each level-up you choose 1 of several random
+  adaptations. On top of that, you partly become what you eat (see 3.7). **SETTLED**
 - **Why:** this is where builds get chaotic and clever.
 - **Rules & numbers:** number of choices per pick, rerolls, whether
   adaptations stack/upgrade, how eating changes you: **OPEN**
@@ -68,7 +68,9 @@ _One subsection per mechanic. Template:_
 
 ### 3.6 Combat / abilities
 - Abilities fire when you press a button (not automatic). **SETTLED**
-- Keys, number of slots, aiming with keyboard only: **OPEN**
+- Keys: WASD to move. J / K / L / Space are 4 ability slots. Abilities fire
+  the way you're facing. **SETTLED**
+- Mutations that give an attack fill these slots. Mouse aiming comes later. **SETTLED**
 
 ### 3.7 Become what you eat
 - Eating a creature type makes its adaptations show up more often in your
@@ -79,13 +81,14 @@ _Unsorted ideas not yet promoted to mechanics._
 - Crab pull (carcinization) as a real mechanic: **OPEN**
 
 ## 5. Win / lose / scoring
-- **OPEN**
+- No score. The fun is seeing what you turn into. A run ends when you die. **SETTLED**
 
 ## 6. Progression & economy
 - **OPEN**
 
 ## 7. World, setting & tone
-- **OPEN**
+- Tone: silly, not super realistic. **SETTLED**
+- Setting (water / land / shore): **OPEN**
 
 ## 8. Scope & tech
 - Engine / language: **OPEN**
@@ -109,3 +112,7 @@ _Unsorted ideas not yet promoted to mechanics._
 | 13 | Health | Health bar, healed by eating | 2026-10-27 |
 | 14 | Become what you eat | Eating a creature biases your picks toward its adaptations | 2026-10-27 |
 | 15 | Controls | Keyboard only for now | 2026-10-27 |
+| 16 | XP source | Eating kills gives XP; fruit gives none | 2026-10-27 |
+| 17 | Ability keys | WASD to move, J/K/L/Space for abilities, aimed where you're facing | 2026-10-27 |
+| 18 | Scoring | No score | 2026-10-27 |
+| 19 | Tone | Silly, not realistic | 2026-10-27 |
