@@ -121,8 +121,16 @@ _One subsection per mechanic. Template:_
 
 ## 4. Ideas backlog
 _Unsorted ideas not yet promoted to mechanics._
-- **Home / house:** a house that shows all your past runs, and the animals
-  show up there. Plus a customization room. Details are **OPEN**
+- **Home / house (version 2):** **SETTLED**
+  - For show only: no power boosts, and runs still restart from scratch.
+  - A collection book with a page for every creature you've eaten, AND
+    those animals walk around the house. The creatures you made in past
+    runs walk around too.
+  - A wall of creature cards: each run's death card hangs like a picture
+    frame.
+  - Customization room: octopus color/pattern, plus hats and accessories.
+    How you unlock them: **OPEN**
+  - Saves: accounts / cloud saves. Which service and how you log in: **OPEN**
 - Crab pull: the longer you survive, the more crab parts show up in your
   picks. Going full crab does nothing special; it's just funny. **SETTLED**
 
@@ -160,7 +168,8 @@ _Unsorted ideas not yet promoted to mechanics._
   - Eating gives XP; choose 1 of 3 at each level-up
   - About 10 mutations
   - Creature card when you die
-  - Later: bosses, other zones, rerolls, mouse/touch, sound
+  - Later: bosses, other zones, rerolls, mouse/touch, sound, house +
+    accounts (version 2)
 - Hosting: GitHub Pages (itch.io later). **SETTLED**
 - Tuning: the coding session chooses starting numbers (health, damage,
   speed, XP curve, spawn rates, rerolls) and keeps them all in one settings
@@ -218,3 +227,9 @@ _Unsorted ideas not yet promoted to mechanics._
 | 47 | Art pipeline | Paper drawings uploaded to art/raw/, Claude pixelizes them | 2026-10-27 |
 | 48 | Duck | Secretly deadly, gives Duck Bill, about 1 in 3 runs | 2026-10-27 |
 | 49 | Numbers | Coding session sets them in one settings file | 2026-10-27 |
+| 50 | House purpose | For show only, no power boosts | 2026-10-27 |
+| 51 | House animals | Collection book + eaten animals and past creatures walk around | 2026-10-27 |
+| 52 | Past runs | Wall of creature cards | 2026-10-27 |
+| 53 | Customization | Color/pattern + hats/accessories | 2026-10-27 |
+| 54 | House timing | Version 2 | 2026-10-27 |
+| 55 | Saving | Accounts / cloud saves | 2026-10-27 |
