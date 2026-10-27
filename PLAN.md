@@ -12,7 +12,9 @@ Living design doc. Every mechanic and idea lives here. Items marked
 - Platform: web game first. **SETTLED**
 - Feel: chaotic, clever and relaxed at the same time. **SETTLED**
 - Scope: solo hobby project, no deadline. **SETTLED**
-- Genre / camera / session length: **OPEN**
+- Genre: top-down 2D roguelite survivor, like Vampire Survivors / Brotato.
+  Each run is one life. **SETTLED**
+- Session length: **OPEN**
 
 ## 2. Core loop
 - Moment-to-moment (seconds): **OPEN**
@@ -31,11 +33,30 @@ _One subsection per mechanic. Template:_
 - **Failure / edge cases:**
 - **Status:** OPEN
 
+### 3.1 Adaptations (build)
+- **What it is:** Kills earn progress. At each threshold you choose 1 of
+  several random adaptations (VS/Brotato style). On top of that, you partly
+  become what you eat.
+- **Why:** this is where builds get chaotic and clever.
+- **Rules & numbers:** number of choices per pick, rerolls, whether
+  adaptations stack/upgrade, how eating changes you: **OPEN**
+- **Status:** core SETTLED, details OPEN
+
+### 3.2 Hunger
+- **What it is:** a food meter that drains over time.
+- **Rules:** hunger can't kill you. When the meter is empty you move slower
+  and your attacks deal less damage. You don't shrink. **SETTLED**
+- **Where food comes from / drain rate:** **OPEN**
+- **Status:** core SETTLED, details OPEN
+
+### 3.3 Death & runs
+- **What it is:** when you die, the run restarts from scratch. Nothing
+  carries over (no meta-progression). **SETTLED**
+- **What kills you:** enemies (hunger can't). The health system is **OPEN**
+
 ## 4. Ideas backlog
 _Unsorted ideas not yet promoted to mechanics._
-- Adaptations / build choice: you choose how your octopus evolves.
-- Food / hunger: you need food to survive.
-- Crab world: everything tends toward crab.
+- Crab world: everything tends toward crab. Meaning still being clarified.
 
 ## 5. Win / lose / scoring
 - **OPEN**
@@ -57,3 +78,7 @@ _Unsorted ideas not yet promoted to mechanics._
 | 2 | Platform | Web game first | 2026-10-27 |
 | 3 | Experience goal | Chaotic, clever and relaxed | 2026-10-27 |
 | 4 | Scope | Solo hobby project | 2026-10-27 |
+| 5 | Genre | Top-down 2D roguelite survivor | 2026-10-27 |
+| 6 | Adaptation source | Kills earn picks (choose from random options), plus partly becoming what you eat | 2026-10-27 |
+| 7 | Hunger | Empty meter means slower and weaker; no shrinking, no death | 2026-10-27 |
+| 8 | Death | Full restart, no meta-progression | 2026-10-27 |
