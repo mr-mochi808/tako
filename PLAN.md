@@ -71,7 +71,9 @@ _One subsection per mechanic. Template:_
 - First-version creatures (beach): **Small Crab** (prey, runs away),
   **Seagull** (predator, dives at you), **Hermit Crab** (neutral, fights
   back when hit). **SETTLED**
-- **Duck:** the rarest creature, and super funny. Details are **OPEN**
+- **Duck:** the rarest creature, about once every 3 runs. It waddles around
+  looking harmless, but it's secretly the strongest thing in the game.
+  Eating it always gives **Duck Bill** (your bite quacks and stuns). **SETTLED**
 
 ### 3.2 Hunger
 - **What it is:** a food meter that drains over time.
@@ -119,6 +121,8 @@ _One subsection per mechanic. Template:_
 
 ## 4. Ideas backlog
 _Unsorted ideas not yet promoted to mechanics._
+- **Home / house:** a house that shows all your past runs, and the animals
+  show up there. Plus a customization room. Details are **OPEN**
 - Crab pull: the longer you survive, the more crab parts show up in your
   picks. Going full crab does nothing special; it's just funny. **SETTLED**
 
@@ -136,9 +140,11 @@ _Unsorted ideas not yet promoted to mechanics._
 - Setting: beach, ocean and land. You can crawl out of the water. **SETTLED**
 - Map: infinite, randomly generated islands in an endless ocean, each
   island ringed by beach. **SETTLED**
-- Art: the designer hand-draws it. Claude helps turn the drawings into game
-  sprites, possibly pixelized. The code uses simple shapes until the art is
-  ready. Pixel vs. cartoon: **OPEN**
+- Art: cartoon designs drawn as pixel art (no smooth lines). The designer
+  draws on paper, then uploads photos/scans to `art/raw/`. Claude converts
+  them to pixel sprites. Each body part is a separate drawing so it can
+  attach to the octopus. The code uses simple shapes until the art is
+  ready. **SETTLED**
 - Sound: none in the first version. **SETTLED**
 
 ## 8. Scope & tech
@@ -156,6 +162,9 @@ _Unsorted ideas not yet promoted to mechanics._
   - Creature card when you die
   - Later: bosses, other zones, rerolls, mouse/touch, sound
 - Hosting: GitHub Pages (itch.io later). **SETTLED**
+- Tuning: the coding session chooses starting numbers (health, damage,
+  speed, XP curve, spawn rates, rerolls) and keeps them all in one settings
+  file to tune through playtesting. **SETTLED**
 
 ## 9. Decision log
 | # | Decision | Answer | Date |
@@ -205,3 +214,7 @@ _Unsorted ideas not yet promoted to mechanics._
 | 43 | Creatures | Small Crab, Seagull, Hermit Crab, plus a rare Duck | 2026-10-27 |
 | 44 | Hosting | GitHub Pages | 2026-10-27 |
 | 45 | Sound | None in the first version | 2026-10-27 |
+| 46 | Art style | Cartoon designs drawn as pixel art | 2026-10-27 |
+| 47 | Art pipeline | Paper drawings uploaded to art/raw/, Claude pixelizes them | 2026-10-27 |
+| 48 | Duck | Secretly deadly, gives Duck Bill, about 1 in 3 runs | 2026-10-27 |
+| 49 | Numbers | Coding session sets them in one settings file | 2026-10-27 |
