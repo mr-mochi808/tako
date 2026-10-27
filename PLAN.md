@@ -43,8 +43,10 @@ _One subsection per mechanic. Template:_
   refills health and hunger). Each level-up you choose 1 of several random
   adaptations. On top of that, you partly become what you eat (see 3.7). **SETTLED**
 - **Why:** this is where builds get chaotic and clever.
-- **Body slots:** mutations go into body slots, and stacking is also
-  allowed. What "stack" means exactly: **OPEN**
+- **Body slots:** mutations go into body slots. Stacking works two ways:
+  picking the same mutation again upgrades it, and a slot can hold more
+  than one mutation. **SETTLED** (how many per slot: **OPEN**)
+- **Picks:** choose 1 of 3, with a few rerolls per run. **SETTLED**
 - **Rules & numbers:** number of choices per pick, rerolls, whether
   adaptations stack/upgrade, how eating changes you: **OPEN**
 - **Status:** core SETTLED, details OPEN
@@ -75,6 +77,19 @@ _One subsection per mechanic. Template:_
   the way you're facing. **SETTLED**
 - Mutations that give an attack fill these slots. Mouse aiming comes later. **SETTLED**
 - Starting kit: tentacle slap only. No ink cloud. **SETTLED**
+- Keys tied to body parts: some slots come with an attack, and each one has a
+  fixed key. Suggested: J = tentacles, K = mouth, L = claws, Space =
+  special. **SETTLED** (exact mapping can still change)
+
+### 3.8 Zones
+- Ocean (fish, squid), beach (crabs) and inland (fruit trees, land
+  animals). Each zone has different food and enemies. **SETTLED**
+- Some parts work better in one zone (fins are fast in water, legs are fast
+  on land). **SETTLED**
+
+### 3.9 Bosses
+- A giant creature (King Crab, Giant Seagull, ...) appears about every
+  5 minutes. Killing it gives a guaranteed rare mutation. **SETTLED**
 
 ### 3.7 Become what you eat
 - Eating a creature type makes its adaptations show up more often in your
@@ -83,7 +98,7 @@ _One subsection per mechanic. Template:_
 ## 4. Ideas backlog
 _Unsorted ideas not yet promoted to mechanics._
 - Crab pull: the longer you survive, the more crab parts show up in your
-  picks. **SETTLED** (Does anything happen when you go full crab? **OPEN**)
+  picks. Going full crab does nothing special; it's just funny. **SETTLED**
 
 ## 5. Win / lose / scoring
 - No score. The fun is seeing what you turn into. A run ends when you die. **SETTLED**
@@ -99,7 +114,9 @@ _Unsorted ideas not yet promoted to mechanics._
 - Setting: beach, ocean and land. You can crawl out of the water. **SETTLED**
 
 ## 8. Scope & tech
-- Engine / language: **OPEN**
+- Engine / language: should feel smooth like Everything is Crab, which is
+  made in **Unity (C#)** by Odd Dreams Digital. Unity can export to the web.
+  Final pick: **OPEN**
 - MVP feature cut: **OPEN**
 
 ## 9. Decision log
@@ -131,3 +148,9 @@ _Unsorted ideas not yet promoted to mechanics._
 | 24 | Setting | Beach, ocean, land | 2026-10-27 |
 | 25 | Death screen | Creature card | 2026-10-27 |
 | 26 | Hunger drain | Slow | 2026-10-27 |
+| 27 | Stacking | Repeat picks upgrade, and a slot can hold several | 2026-10-27 |
+| 28 | Keys vs. slots | Each attack slot has a fixed key | 2026-10-27 |
+| 29 | Picks | 1 of 3, with a few rerolls | 2026-10-27 |
+| 30 | Zones | Different food/enemies per zone, and some parts suit a zone | 2026-10-27 |
+| 31 | Bosses | About every 5 minutes, drop a rare mutation | 2026-10-27 |
+| 32 | Full crab | Nothing special, just funny | 2026-10-27 |
