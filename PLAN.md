@@ -45,8 +45,21 @@ _One subsection per mechanic. Template:_
 - **Why:** this is where builds get chaotic and clever.
 - **Body slots:** mutations go into body slots. Stacking works two ways:
   picking the same mutation again upgrades it, and a slot can hold more
-  than one mutation. **SETTLED** (how many per slot: leaning toward "it
-  depends on the slot", e.g. 8 tentacles and 2 head. Needs confirming: **OPEN**)
+  than one mutation. Each slot holds up to **2** mutations. **SETTLED**
+- **Starting mutation list (first version):** **SETTLED**
+
+  | # | Mutation | Slot | Key | What it does |
+  |---|----------|------|-----|--------------|
+  | 1 | Claw | Tentacles | L | Pinch attack, short range, hits hard |
+  | 2 | Crab Shell | Back | – | Take less damage, move a bit slower (crab part) |
+  | 3 | Crab Legs | Tentacles | – | Fast on land, slow in water (crab part) |
+  | 4 | Fins | Back | – | Fast in water |
+  | 5 | Big Mouth | Mouth | K | Bite attack that heals you a little |
+  | 6 | Spikes | Skin | – | Hurts anything that touches you |
+  | 7 | Horn | Head | Space | Charge forward |
+  | 8 | Extra Eyes | Head | – | See farther (camera zooms out) |
+  | 9 | Stretchy Tentacle | Tentacles | J upgrade | The slap reaches farther |
+  | 10 | Stomach | Mouth | – | Hunger drains slower |
 - **Picks:** choose 1 of 3, with a few rerolls per run. **SETTLED**
 - **Rules & numbers:** number of choices per pick, rerolls, whether
   adaptations stack/upgrade, how eating changes you: **OPEN**
@@ -55,6 +68,10 @@ _One subsection per mechanic. Template:_
 ### 3.1b Creature behavior
 - Prey runs away (fish, small crabs), predators hunt you (sharks,
   seagulls), and neutral creatures only fight back when you hit them. **SETTLED**
+- First-version creatures (beach): **Small Crab** (prey, runs away),
+  **Seagull** (predator, dives at you), **Hermit Crab** (neutral, fights
+  back when hit). **SETTLED**
+- **Duck:** the rarest creature, and super funny. Details are **OPEN**
 
 ### 3.2 Hunger
 - **What it is:** a food meter that drains over time.
@@ -117,8 +134,12 @@ _Unsorted ideas not yet promoted to mechanics._
 ## 7. World, setting & tone
 - Tone: silly, not super realistic. **SETTLED**
 - Setting: beach, ocean and land. You can crawl out of the water. **SETTLED**
-- Map: infinite, randomly generated. **SETTLED** (how zones are laid out: **OPEN**)
-- Art: cartoon / hand-drawn. Start with simple shapes for testing. **SETTLED**
+- Map: infinite, randomly generated islands in an endless ocean, each
+  island ringed by beach. **SETTLED**
+- Art: the designer hand-draws it. Claude helps turn the drawings into game
+  sprites, possibly pixelized. The code uses simple shapes until the art is
+  ready. Pixel vs. cartoon: **OPEN**
+- Sound: none in the first version. **SETTLED**
 
 ## 8. Scope & tech
 - Engine: **Phaser** (JavaScript, web). **SETTLED** (Everything is Crab uses
@@ -133,7 +154,8 @@ _Unsorted ideas not yet promoted to mechanics._
   - Eating gives XP; choose 1 of 3 at each level-up
   - About 10 mutations
   - Creature card when you die
-  - Later: bosses, other zones, rerolls, mouse/touch
+  - Later: bosses, other zones, rerolls, mouse/touch, sound
+- Hosting: GitHub Pages (itch.io later). **SETTLED**
 
 ## 9. Decision log
 | # | Decision | Answer | Date |
@@ -176,3 +198,10 @@ _Unsorted ideas not yet promoted to mechanics._
 | 36 | Map | Infinite, randomly generated | 2026-10-27 |
 | 37 | Art | Cartoon; shapes for prototyping | 2026-10-27 |
 | 38 | First version | Scope as listed in section 8 | 2026-10-27 |
+| 39 | Mutations per slot | 2 | 2026-10-27 |
+| 40 | Zone layout | Islands in an endless ocean | 2026-10-27 |
+| 41 | Art source | Designer draws; Claude helps pixelize | 2026-10-27 |
+| 42 | Mutations | Starter list of 10 accepted | 2026-10-27 |
+| 43 | Creatures | Small Crab, Seagull, Hermit Crab, plus a rare Duck | 2026-10-27 |
+| 44 | Hosting | GitHub Pages | 2026-10-27 |
+| 45 | Sound | None in the first version | 2026-10-27 |
