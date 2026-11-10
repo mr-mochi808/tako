@@ -143,16 +143,20 @@ log at the bottom records each answer.
 ## 7b. Look & feel
 _Being grilled. A design canvas of the screens lives at
 https://claude.ai/artifact/7oYUneS4pfCStgjYk9BLAw (private)._
-- **Polish:** it should look more polished than the first canvas draft.
-  Not everything is pixel art. Exactly which parts are pixel and which are
-  smooth: **OPEN**
-- **Octopus size:** smaller on screen than the first draft. **SETTLED**
-  (exact size **OPEN**)
+- **Pixel art everywhere:** characters, world, HUD and menus. The first
+  canvas draft wasn't pixel enough (it had smooth, rounded shapes), and it
+  should look more polished. **SETTLED**
+- **Animation:** each action has its own animation (idle, swim, crawl,
+  attack, eat, hurt). **SETTLED**
+- **Octopus size:** about 1/12 of the screen height. **SETTLED**
 - **Camera:** starts at a medium distance and zooms out as you grow or get
   Extra Eyes. **SETTLED**
-- **Does the body grow?** **OPEN**
+- **Body size:** stays the same; it only gains parts. **SETTLED**
 - **Hit feel:** the enemy flashes white, damage numbers pop up, and silly
-  effects ("SLAP!", stars, feathers). **SETTLED** (screen shake / hit-stop: **OPEN**)
+  effects ("SLAP!", stars, feathers), plus a tiny screen shake on big hits
+  only. **SETTLED**
+- **Damage numbers:** bouncy cartoon numbers, bigger for big hits, a
+  different color for crits, and words for silly hits ("QUACK!"). **SETTLED**
 - **Level-up:** the game pauses while you choose. **SETTLED**
 - **Movement:** probably different by zone (floaty in water, wobbly on land,
   faster with Crab Legs). Revisit later. **OPEN**
