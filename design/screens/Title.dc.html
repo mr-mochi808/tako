@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Tako title screen</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;600;700&amp;family=Silkscreen:wght@400;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#1F1B2E}a:hover{color:#5A2A4A}
+.notch{clip-path:polygon(0 6px,6px 6px,6px 0,calc(100% - 6px) 0,calc(100% - 6px) 6px,100% 6px,100% calc(100% - 6px),calc(100% - 6px) calc(100% - 6px),calc(100% - 6px) 100%,6px 100%,6px calc(100% - 6px),0 calc(100% - 6px))}
+.px{position:absolute;display:block;image-rendering:pixelated}
+</style>
+</helmet>
+<div style="width: 1280px; height: 720px; position: relative; overflow: hidden; font-family: 'Pixelify Sans', monospace; color: #1F1B2E; background: #3A7BC8">
+  <!-- sky-to-sea bands -->
+  <div style="position: absolute; left: 0; top: 0; width: 1280px; height: 120px; background: #2F68AE"></div>
+  <div style="position: absolute; left: 0; top: 120px; width: 1280px; height: 12px; background: #346FB6"></div>
+  <!-- shimmer -->
+  <div style="position: absolute; left: 120px; top: 200px; width: 36px; height: 6px; background: #7FB3EA; box-shadow: 840px 60px 0 #7FB3EA, 300px 150px 0 #7FB3EA, 1000px 220px 0 #7FB3EA, 600px -40px 0 #7FB3EA"></div>
+  <!-- bubbles -->
+  <div style="position: absolute; left: 380px; top: 360px; width: 6px; height: 6px; background: #B8DAFA; box-shadow: 12px -24px 0 #B8DAFA, 0 -48px 0 #B8DAFA, 520px -10px 0 #B8DAFA, 530px -40px 0 #B8DAFA"></div>
+
+  <!-- beach: stepped -->
+  <div style="position: absolute; left: 0; top: 552px; width: 1280px; height: 168px; background: #F2D49B"></div>
+  <div style="position: absolute; left: 120px; top: 540px; width: 1040px; height: 12px; background: #F2D49B"></div>
+  <div style="position: absolute; left: 0; top: 546px; width: 120px; height: 6px; background: #FFFFFF; opacity: 0.85"></div>
+  <div style="position: absolute; left: 120px; top: 534px; width: 1040px; height: 6px; background: #FFFFFF; opacity: 0.85"></div>
+  <div style="position: absolute; left: 1160px; top: 546px; width: 120px; height: 6px; background: #FFFFFF; opacity: 0.85"></div>
+  <div style="position: absolute; left: 200px; top: 600px; width: 6px; height: 6px; background: #D9B675; box-shadow: 300px 40px 0 #D9B675, 700px 10px 0 #D9B675, 900px 70px 0 #D9B675"></div>
+
+  <!-- big octopus -->
+  <img class="px" alt="" src="/_blob/efb8c92a46a9c8deb90f7d627b537283" style="left: 530px; top: 316px; width: 220px">
+  <div style="position: absolute; left: 552px; top: 540px; width: 180px; height: 12px; background: #1F1B2E; opacity: 0.18"></div>
+
+  <!-- crab and duck cameos -->
+  <img class="px" alt="" src="/_blob/2dc13b5d5d4a4ebcb41ec11f33c4faae" style="left: 230px; top: 580px; width: 84px">
+  <img class="px" alt="" src="/_blob/2f012c5ab1710ced9f799c84e925e031" style="left: 960px; top: 566px; width: 84px">
+
+  <div style="position: absolute; left: 0; right: 0; top: 44px; display: flex; flex-direction: column; align-items: center; gap: 12px">
+    <h1 style="margin: 0; font-family: 'Silkscreen', monospace; font-size: 128px; font-weight: 700; line-height: 1; color: #FFF6E5; text-shadow: 6px 0 0 #8A2B4A, -6px 0 0 #8A2B4A, 0 6px 0 #8A2B4A, 0 -6px 0 #8A2B4A, 6px 6px 0 #8A2B4A, 12px 12px 0 #1F1B2E">TAKO</h1>
+    <p class="notch" style="margin: 0; padding: 6px 14px; font-size: 22px; background: #1F1B2E; color: #FFD84D">Everything becomes crab. Eventually.</p>
+  </div>
+
+  <div style="position: absolute; left: 0; right: 0; top: 320px; display: flex; justify-content: space-between; padding: 0 110px">
+    <button class="notch" style="width: 240px; padding: 18px 24px; font-family: inherit; font-size: 28px; font-weight: 700; background: #FFD84D; color: #1F1B2E; border: 6px solid #8A6110; box-shadow: inset 0 -8px 0 #E0A82A; cursor: pointer">Play</button>
+    <button class="notch" style="width: 240px; padding: 18px 24px; font-family: inherit; font-size: 28px; font-weight: 700; background: #FFF6E5; color: #4A4458; border: 6px solid #8A2B4A; box-shadow: inset 0 -8px 0 #EBDCC2; cursor: pointer">House (soon)</button>
+  </div>
+
+  <p style="position: absolute; left: 0; right: 0; bottom: 24px; margin: 0; text-align: center; font-size: 18px; color: #1F1B2E">WASD to move · J K L Space to attack</p>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1280,"height":720}}'>
+class Component extends DCLogic {
+renderVals() {
+return {};
+}
+}
+</script>
+</body>
+</html>

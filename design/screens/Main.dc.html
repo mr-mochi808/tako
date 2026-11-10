@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Tako gameplay</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#1F1B2E}a:hover{color:#5A2A4A}
+.notch{clip-path:polygon(0 4px,4px 4px,4px 0,calc(100% - 4px) 0,calc(100% - 4px) 4px,100% 4px,100% calc(100% - 4px),calc(100% - 4px) calc(100% - 4px),calc(100% - 4px) 100%,4px 100%,4px calc(100% - 4px),0 calc(100% - 4px))}
+.px{position:absolute;display:block;image-rendering:pixelated}
+.flash{filter:brightness(0) invert(1)}
+</style>
+</helmet>
+<div style="width: 1280px; height: 720px; position: relative; overflow: hidden; font-family: 'Pixelify Sans', monospace; color: #1F1B2E; background: #3A7BC8; image-rendering: pixelated">
+
+  <!-- deep water patches -->
+  <div style="position: absolute; left: 0; top: 0; width: 200px; height: 720px; background: #2F68AE"></div>
+  <div style="position: absolute; left: 200px; top: 0; width: 40px; height: 480px; background: #2F68AE"></div>
+
+  <!-- water shimmer -->
+  <div style="position: absolute; left: 60px; top: 112px; width: 32px; height: 4px; background: #7FB3EA"></div>
+  <div style="position: absolute; left: 72px; top: 116px; width: 16px; height: 4px; background: #7FB3EA"></div>
+  <div style="position: absolute; left: 220px; top: 236px; width: 40px; height: 4px; background: #7FB3EA"></div>
+  <div style="position: absolute; left: 120px; top: 404px; width: 24px; height: 4px; background: #7FB3EA"></div>
+  <div style="position: absolute; left: 280px; top: 548px; width: 36px; height: 4px; background: #7FB3EA"></div>
+  <div style="position: absolute; left: 40px; top: 628px; width: 28px; height: 4px; background: #7FB3EA"></div>
+
+  <!-- bubbles -->
+  <div style="position: absolute; left: 300px; top: 300px; width: 8px; height: 8px; border: 4px solid #B8DAFA; box-sizing: border-box"></div>
+  <div style="position: absolute; left: 316px; top: 276px; width: 4px; height: 4px; background: #B8DAFA"></div>
+  <div style="position: absolute; left: 152px; top: 180px; width: 8px; height: 8px; border: 4px solid #B8DAFA; box-sizing: border-box"></div>
+
+  <!-- island: stepped shoreline -->
+  <div style="position: absolute; left: 440px; top: 40px; width: 840px; height: 680px; background: #F2D49B"></div>
+  <div style="position: absolute; left: 408px; top: 88px; width: 32px; height: 584px; background: #F2D49B"></div>
+  <div style="position: absolute; left: 384px; top: 152px; width: 24px; height: 456px; background: #F2D49B"></div>
+  <div style="position: absolute; left: 368px; top: 232px; width: 16px; height: 296px; background: #F2D49B"></div>
+  <!-- wet sand + foam -->
+  <div style="position: absolute; left: 360px; top: 232px; width: 8px; height: 296px; background: #E3BE7E"></div>
+  <div style="position: absolute; left: 352px; top: 240px; width: 8px; height: 280px; background: #FFFFFF; opacity: 0.85"></div>
+  <div style="position: absolute; left: 376px; top: 152px; width: 8px; height: 80px; background: #FFFFFF; opacity: 0.85"></div>
+  <div style="position: absolute; left: 376px; top: 528px; width: 8px; height: 80px; background: #FFFFFF; opacity: 0.85"></div>
+  <div style="position: absolute; left: 400px; top: 88px; width: 8px; height: 64px; background: #FFFFFF; opacity: 0.85"></div>
+  <div style="position: absolute; left: 400px; top: 608px; width: 8px; height: 64px; background: #FFFFFF; opacity: 0.85"></div>
+  <div style="position: absolute; left: 432px; top: 40px; width: 8px; height: 48px; background: #FFFFFF; opacity: 0.85"></div>
+  <div style="position: absolute; left: 440px; top: 32px; width: 840px; height: 8px; background: #FFFFFF; opacity: 0.85"></div>
+
+  <!-- sand speckles -->
+  <div style="position: absolute; left: 520px; top: 120px; width: 4px; height: 4px; background: #D9B675"></div>
+  <div style="position: absolute; left: 610px; top: 200px; width: 4px; height: 4px; background: #D9B675"></div>
+  <div style="position: absolute; left: 470px; top: 560px; width: 4px; height: 4px; background: #D9B675"></div>
+  <div style="position: absolute; left: 700px; top: 640px; width: 4px; height: 4px; background: #D9B675"></div>
+  <div style="position: absolute; left: 560px; top: 420px; width: 4px; height: 4px; background: #D9B675"></div>
+  <div style="position: absolute; left: 740px; top: 110px; width: 4px; height: 4px; background: #D9B675"></div>
+
+  <!-- grass: stepped -->
+  <div style="position: absolute; left: 840px; top: 140px; width: 440px; height: 520px; background: #7CC46A"></div>
+  <div style="position: absolute; left: 808px; top: 180px; width: 32px; height: 440px; background: #7CC46A"></div>
+  <div style="position: absolute; left: 788px; top: 240px; width: 20px; height: 320px; background: #7CC46A"></div>
+  <div style="position: absolute; left: 840px; top: 132px; width: 440px; height: 8px; background: #5DB35A"></div>
+  <div style="position: absolute; left: 900px; top: 300px; width: 8px; height: 8px; background: #5DB35A"></div>
+  <div style="position: absolute; left: 1010px; top: 560px; width: 8px; height: 8px; background: #5DB35A"></div>
+  <div style="position: absolute; left: 1200px; top: 240px; width: 8px; height: 8px; background: #5DB35A"></div>
+
+  <!-- shadows (soft, stepped) -->
+  <div style="position: absolute; left: 902px; top: 264px; width: 64px; height: 8px; background: #1F1B2E; opacity: 0.18"></div>
+  <div style="position: absolute; left: 1082px; top: 474px; width: 64px; height: 8px; background: #1F1B2E; opacity: 0.18"></div>
+  <div style="position: absolute; left: 494px; top: 392px; width: 58px; height: 6px; background: #1F1B2E; opacity: 0.2"></div>
+  <div style="position: absolute; left: 600px; top: 392px; width: 36px; height: 6px; background: #1F1B2E; opacity: 0.2"></div>
+  <div style="position: absolute; left: 662px; top: 548px; width: 36px; height: 6px; background: #1F1B2E; opacity: 0.2"></div>
+  <div style="position: absolute; left: 700px; top: 238px; width: 40px; height: 6px; background: #1F1B2E; opacity: 0.2"></div>
+  <div style="position: absolute; left: 584px; top: 196px; width: 44px; height: 6px; background: #1F1B2E; opacity: 0.14"></div>
+  <div style="position: absolute; left: 1150px; top: 622px; width: 44px; height: 6px; background: #1F1B2E; opacity: 0.2"></div>
+
+  <!-- fruit trees -->
+  <img class="px" alt="" src="/_blob/fee8f0afecc06694da6bc51e3a7201ac" style="left: 876px; top: 160px; width: 120px">
+  <img class="px" alt="" src="/_blob/fee8f0afecc06694da6bc51e3a7201ac" style="left: 1056px; top: 370px; width: 120px">
+
+  <!-- fruit on the ground -->
+  <img class="px" alt="" src="/_blob/63b76931962afc57cf79653aa3d5b935" style="left: 1000px; top: 262px; width: 12px">
+
+  <!-- hermit crab (neutral) -->
+  <img class="px" alt="" src="/_blob/ff051c27bb348548e9d37511850c34f9" style="left: 698px; top: 208px; width: 42px">
+
+  <!-- seagull (predator) diving -->
+  <img class="px" alt="" src="/_blob/bf69b00f84c3d44d412e2e1d94c94e63" style="left: 580px; top: 150px; width: 54px">
+
+  <!-- small crab (prey) -->
+  <img class="px" alt="" src="/_blob/2dc13b5d5d4a4ebcb41ec11f33c4faae" style="left: 660px; top: 518px; width: 42px">
+
+  <!-- rare duck -->
+  <img class="px" alt="" src="/_blob/2f012c5ab1710ced9f799c84e925e031" style="left: 1146px; top: 588px; width: 42px">
+
+  <!-- food from a kill -->
+  <img class="px" alt="" src="/_blob/bc85c426574c4879f87bb24fac4bd57b" style="left: 452px; top: 440px; width: 15px">
+
+  <!-- the octopus, mid-slap -->
+  <img class="px" alt="" src="/_blob/efb8c92a46a9c8deb90f7d627b537283" style="left: 490px; top: 330px; width: 66px">
+  <div style="position: absolute; left: 550px; top: 372px; width: 48px; height: 6px; background: #E86A88; box-shadow: 0 -3px 0 #7E2645, 0 3px 0 #C2486A, 0 6px 0 #7E2645"></div>
+  <div style="position: absolute; left: 562px; top: 375px; width: 3px; height: 3px; background: #FBD0DB; box-shadow: 9px 0 0 #FBD0DB, 18px 0 0 #FBD0DB, 27px 0 0 #FBD0DB"></div>
+  <div style="position: absolute; left: 596px; top: 366px; width: 6px; height: 12px; background: #E86A88; box-shadow: 3px 0 0 #7E2645, 0 -3px 0 #7E2645"></div>
+  <!-- sand puffs -->
+  <div style="position: absolute; left: 480px; top: 392px; width: 8px; height: 8px; background: #FFF1D2"></div>
+  <div style="position: absolute; left: 470px; top: 384px; width: 4px; height: 4px; background: #FFF1D2"></div>
+  <div style="position: absolute; left: 548px; top: 396px; width: 4px; height: 4px; background: #FFF1D2"></div>
+
+  <!-- crab being hit: white flash -->
+  <img class="px flash" alt="" src="/_blob/2dc13b5d5d4a4ebcb41ec11f33c4faae" style="left: 600px; top: 352px; width: 42px">
+  <!-- hit sparks -->
+  <div style="position: absolute; left: 596px; top: 340px; width: 4px; height: 4px; background: #FFD84D"></div>
+  <div style="position: absolute; left: 644px; top: 344px; width: 4px; height: 4px; background: #FFD84D"></div>
+  <div style="position: absolute; left: 640px; top: 392px; width: 4px; height: 4px; background: #FFD84D"></div>
+
+  <!-- SLAP! + damage numbers -->
+  <div style="position: absolute; left: 596px; top: 290px; font-size: 30px; font-weight: 700; color: #FFF6E5; text-shadow: 3px 0 0 #1F1B2E, -3px 0 0 #1F1B2E, 0 3px 0 #1F1B2E, 0 -3px 0 #1F1B2E, 3px 3px 0 #1F1B2E; transform: rotate(-8deg)">SLAP!</div>
+  <div style="position: absolute; left: 668px; top: 330px; font-size: 34px; font-weight: 700; color: #FFD84D; text-shadow: 3px 0 0 #1F1B2E, -3px 0 0 #1F1B2E, 0 3px 0 #1F1B2E, 0 -3px 0 #1F1B2E, 3px 3px 0 #1F1B2E">24!</div>
+  <div style="position: absolute; left: 736px; top: 196px; font-size: 20px; font-weight: 700; color: #FFFFFF; text-shadow: 2px 0 0 #1F1B2E, -2px 0 0 #1F1B2E, 0 2px 0 #1F1B2E, 0 -2px 0 #1F1B2E">8</div>
+
+  <!-- HUD: health + hunger -->
+  <div class="notch" style="position: absolute; left: 20px; top: 20px; display: flex; flex-direction: column; gap: 10px; padding: 14px 16px; background: #FFF6E5; border: 4px solid #1F1B2E">
+    <div style="display: flex; align-items: center; gap: 10px">
+      <span style="width: 64px; font-size: 16px; font-weight: 700">Health</span>
+      <div style="width: 200px; height: 16px; background: #5A3040; border: 4px solid #1F1B2E">
+        <div style="width: 72%; height: 100%; background: #E8384F; box-shadow: inset 0 4px 0 #FF8095"></div>
+      </div>
+    </div>
+    <div style="display: flex; align-items: center; gap: 10px">
+      <span style="width: 64px; font-size: 16px; font-weight: 700">Hunger</span>
+      <div style="width: 200px; height: 16px; background: #5A4020; border: 4px solid #1F1B2E">
+        <div style="width: 45%; height: 100%; background: #F09A1E; box-shadow: inset 0 4px 0 #FFC56A"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- HUD: survival time -->
+  <div class="notch" style="position: absolute; right: 20px; top: 20px; padding: 10px 16px; background: #FFF6E5; border: 4px solid #1F1B2E; font-size: 24px; font-weight: 700">04:37</div>
+
+  <!-- HUD: ability keys -->
+  <div style="position: absolute; left: 50%; bottom: 40px; transform: translateX(-50%); display: flex; gap: 12px">
+    <div class="notch" style="width: 76px; height: 76px; box-sizing: border-box; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px; background: #FFF6E5; border: 4px solid #1F1B2E; box-shadow: inset 0 -6px 0 #E3D3B8">
+      <span style="font-size: 26px; font-weight: 700">J</span>
+      <span style="font-size: 13px">Slap</span>
+    </div>
+    <div class="notch" style="width: 76px; height: 76px; box-sizing: border-box; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px; background: #FFF6E5; border: 4px solid #1F1B2E; box-shadow: inset 0 -6px 0 #E3D3B8">
+      <span style="font-size: 26px; font-weight: 700">K</span>
+      <span style="font-size: 13px">Bite</span>
+    </div>
+    <div class="notch" style="width: 76px; height: 76px; box-sizing: border-box; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px; background: #CFC3AE; border: 4px solid #1F1B2E; color: #3F3A4C">
+      <span style="font-size: 26px; font-weight: 700">L</span>
+      <span style="font-size: 13px">Empty</span>
+    </div>
+    <div class="notch" style="width: 128px; height: 76px; box-sizing: border-box; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px; background: #CFC3AE; border: 4px solid #1F1B2E; color: #3F3A4C">
+      <span style="font-size: 22px; font-weight: 700">Space</span>
+      <span style="font-size: 13px">Empty</span>
+    </div>
+  </div>
+
+  <!-- HUD: XP bar -->
+  <div style="position: absolute; left: 20px; right: 20px; bottom: 12px; height: 12px; background: #1F1B2E; border: 4px solid #1F1B2E">
+    <div style="width: 62%; height: 100%; background: #6BD4C2; box-shadow: inset 0 4px 0 #A8F0E3"></div>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1280,"height":720}}'>
+class Component extends DCLogic {
+renderVals() {
+return {};
+}
+}
+</script>
+</body>
+</html>

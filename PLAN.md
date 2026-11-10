@@ -188,6 +188,19 @@ https://claude.ai/artifact/7oYUneS4pfCStgjYk9BLAw (private)._
   together with smoothing all the animations. **OPEN (later)**
 - **Crab level:** no HUD meter; you see it on your body. **SETTLED**
 
+### Open look & feel questions (pick up here next time)
+- Q22: How long is one day? (suggested: about 6 minutes, night about 2)
+- Q23: Night-only creatures? (suggested: start with a glowing Moon Crab)
+- Q24: What night looks like? (suggested: darker blue, light around the
+  octopus, glowing creatures and water)
+- Q25: A sun/moon icon in the HUD? (suggested: yes, next to the timer)
+- Q26: Day/night in the first version? (suggested: no, add it next)
+- Later: movement feel and smoothing all the animations.
+
+Design files: the live canvas is linked above. Copies of the screen mockups
+are in `design/screens/`, and the placeholder pixel sprites (PNG + the
+scripts that draw them) are in `design/sprites/`.
+
 ## 8. Tech & scope
 - **Engine:** Phaser (JavaScript, web).
 - **Hosting:** GitHub Pages (itch.io later).
