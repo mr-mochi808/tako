@@ -162,7 +162,18 @@ https://claude.ai/artifact/7oYUneS4pfCStgjYk9BLAw (private)._
 - **Mutations on the body:** some parts replace part of the sprite (claws
   and legs swap in for tentacles), and others stick on top (horns, shells,
   eyes, bill). **SETTLED**
-- **Colors / mood (day-night?):** **OPEN**
+- **Colors / mood:** a day/night cycle: bright day, orange sunset, dark
+  blue night. Tougher creatures come out at night. **SETTLED** (how long a
+  day lasts and which creatures are night-only: **OPEN**)
+- **Death moment:** slow motion and a zoom-in on the octopus, the creature
+  that killed you does a little victory dance (seagull flaps, duck quacks),
+  then the creature card slides in. **SETTLED**
+- **Level-up moment:** a quick burst of light and sparkles from the
+  octopus, then the game pauses for the pick. **SETTLED**
+- **Fonts:** a chunky pixel font for big titles (Silkscreen in the mockup)
+  and Pixelify Sans for everything else. **SETTLED**
+- **Sprites must stay crisp at any zoom:** no gaps between pixels (use
+  real image sprites drawn with nearest-neighbor scaling). **SETTLED**
 - **Camera:** starts at a medium distance and zooms out as you grow or get
   Extra Eyes. **SETTLED**
 - **Body size:** stays the same; it only gains parts. **SETTLED**
@@ -172,8 +183,9 @@ https://claude.ai/artifact/7oYUneS4pfCStgjYk9BLAw (private)._
 - **Damage numbers:** bouncy cartoon numbers, bigger for big hits, a
   different color for crits, and words for silly hits ("QUACK!"). **SETTLED**
 - **Level-up:** the game pauses while you choose. **SETTLED**
-- **Movement:** probably different by zone (floaty in water, wobbly on land,
-  faster with Crab Legs). Revisit later. **OPEN**
+- **Movement & animation smoothness:** probably different by zone (floaty
+  in water, wobbly on land, faster with Crab Legs). To be grilled later,
+  together with smoothing all the animations. **OPEN (later)**
 - **Crab level:** no HUD meter; you see it on your body. **SETTLED**
 
 ## 8. Tech & scope
