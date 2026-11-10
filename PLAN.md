@@ -149,6 +149,20 @@ https://claude.ai/artifact/7oYUneS4pfCStgjYk9BLAw (private)._
 - **Animation:** each action has its own animation (idle, swim, crawl,
   attack, eat, hurt). **SETTLED**
 - **Octopus size:** about 1/12 of the screen height. **SETTLED**
+- **Octopus shape:** must read as an octopus, not a jellyfish: a big
+  rounded head, eyes low on the head, and curly tentacles spreading out
+  with suckers. **SETTLED**
+- **Pixel size:** finer pixels with more detail per creature (Stardew
+  Valley / Celeste level), not chunky. **SETTLED**
+- **Outlines:** colored outlines, a darker shade of each creature's color
+  (not black). **SETTLED**
+- **Idle life:** the octopus bobs and its tentacles wiggle, trees sway,
+  waves roll in, creatures blink and look around, and the duck stares at
+  you without blinking. **SETTLED**
+- **Mutations on the body:** some parts replace part of the sprite (claws
+  and legs swap in for tentacles), and others stick on top (horns, shells,
+  eyes, bill). **SETTLED**
+- **Colors / mood (day-night?):** **OPEN**
 - **Camera:** starts at a medium distance and zooms out as you grow or get
   Extra Eyes. **SETTLED**
 - **Body size:** stays the same; it only gains parts. **SETTLED**
