@@ -140,6 +140,24 @@ log at the bottom records each answer.
 - The code uses simple placeholder shapes until the art is ready.
 - **Sound:** none in the first version.
 
+## 7b. Look & feel
+_Being grilled. A design canvas of the screens lives at
+https://claude.ai/artifact/7oYUneS4pfCStgjYk9BLAw (private)._
+- **Polish:** it should look more polished than the first canvas draft.
+  Not everything is pixel art. Exactly which parts are pixel and which are
+  smooth: **OPEN**
+- **Octopus size:** smaller on screen than the first draft. **SETTLED**
+  (exact size **OPEN**)
+- **Camera:** starts at a medium distance and zooms out as you grow or get
+  Extra Eyes. **SETTLED**
+- **Does the body grow?** **OPEN**
+- **Hit feel:** the enemy flashes white, damage numbers pop up, and silly
+  effects ("SLAP!", stars, feathers). **SETTLED** (screen shake / hit-stop: **OPEN**)
+- **Level-up:** the game pauses while you choose. **SETTLED**
+- **Movement:** probably different by zone (floaty in water, wobbly on land,
+  faster with Crab Legs). Revisit later. **OPEN**
+- **Crab level:** no HUD meter; you see it on your body. **SETTLED**
+
 ## 8. Tech & scope
 - **Engine:** Phaser (JavaScript, web).
 - **Hosting:** GitHub Pages (itch.io later).
